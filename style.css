@@ -17,8 +17,6 @@ header {
 }
 
 .nav-desktop {
-     display: flex;
-     align-items: center;
      margin-right: 220px;
 }
 
@@ -31,6 +29,18 @@ header {
 .nav-desktop > ul li {
      color: white;
      margin-right: 30px;
+}
+
+.nav-mobile {
+     display: none;
+}
+
+.hamburger-icon {
+     display: none;
+}
+
+.close-icon {
+     display: none;
 }
 
 .hero-img {
@@ -66,6 +76,9 @@ header {
      padding: 80px;
      width: 100%;
      max-width: 600px;
+     position: relative;
+     top: 160px;
+     right: 150px;
 }
 
 .sec-1__text > h2 {
@@ -82,13 +95,68 @@ header {
      line-height: 1.5;
 }
 
-@media (min-width: 839px) and (max-width: 1050px) {
-     .hero-img {
-          background-image: url("/images/mobile/image-hero.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          height: 800px;
-          display: grid;
-          align-items: center;
+.sec-2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     padding-top: 50px;
+}
+
+.creation-text {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.cards {
+     display: grid;
+     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+@media (min-width: 320px) and (max-width: 1118px) {
+     header {
+          padding: 40px 80px;
      }
+
+     .nav-desktop {
+          display: none;
+     }
+
+     /* .container__navMobile {
+          display: flex;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: -830px;
+          background-color: black;
+          flex-direction: column;
+     }
+
+     .logo-and-closeIcon {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 20px;
+          padding-top: 40px;
+     }
+
+     .nav-mobile {
+     }
+
+     .nav-mobile > ul {
+          list-style: none;
+     }
+
+     .nav-mobile > ul li {
+          color: white;
+     }
+
+     .hamburger-icon {
+          display: block;
+     }
+     .close-icon {
+          display: block;
+     } */
 }
