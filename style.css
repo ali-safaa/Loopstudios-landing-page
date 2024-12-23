@@ -167,6 +167,65 @@ header {
      font-family: "Josefin Sans", serif;
 }
 
+footer {
+     display: grid;
+     align-items: center;
+     background-color: black;
+     padding: 40px 160px;
+     max-width: 100%;
+}
+
+.logo-and-social {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.social-media {
+     display: flex;
+     align-items: center;
+}
+
+.social-media svg {
+     margin-right: 20px;
+}
+
+.contact {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.contact > ul {
+     display: flex;
+     align-items: center;
+     list-style: none;
+}
+
+.contact > ul li {
+     margin-right: 40px;
+     text-transform: uppercase;
+     font-weight: 300;
+     font-family: "Josefin Sans", serif;
+     color: white;
+     margin-top: 40px;
+}
+
+.contact > h4 {
+     color: rgb(114, 111, 111);
+     font-weight: 300;
+     font-family: "Josefin Sans", serif;
+}
+
+.attribution {
+     color: rgb(134, 131, 131);
+     margin-top: 20px;
+}
+
+.attribution a {
+     color: white;
+}
+
 @media (min-width: 320px) and (max-width: 1118px) {
      header {
           padding: 40px 0;
@@ -190,7 +249,9 @@ header {
      }
 
      .hero-img > h3 {
-          margin-left: 40px;
+          font-size: clamp(15px, 5vw, 50px);
+          max-width: 350px;
+          margin: 0 auto;
      }
 
      .sec-1 {
@@ -206,7 +267,9 @@ header {
           background-color: white;
           position: static;
           border: none;
-          /* padding: 0; */
+          padding: 0;
+          margin: 0 80px;
+          margin-top: 80px;
      }
 
      .sec-1__text > h2 {
@@ -214,6 +277,68 @@ header {
      }
      .sec-1__text > p {
           margin: 0 auto;
+     }
+
+     footer {
+          display: grid;
+          align-items: center;
+          background-color: black;
+          padding: 40px 160px;
+          max-width: 100%;
+          justify-content: center;
+     }
+
+     .logo-and-social {
+          display: grid;
+          align-items: center;
+     }
+
+     .social-media {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+     }
+
+     .social-media svg {
+          margin-right: 20px;
+     }
+
+     .contact {
+          display: grid;
+          align-items: center;
+     }
+
+     .contact > ul {
+          display: grid;
+          align-items: center;
+          list-style: none;
+          justify-content: center;
+          margin-bottom: 20px;
+     }
+
+     .contact > ul li {
+          text-transform: uppercase;
+          font-weight: 300;
+          font-family: "Josefin Sans", serif;
+          color: white;
+          margin-top: 40px;
+     }
+
+     .contact > h4 {
+          color: rgb(114, 111, 111);
+          font-weight: 300;
+          font-family: "Josefin Sans", serif;
+     }
+
+     .attribution {
+          color: rgb(134, 131, 131);
+          margin-top: 20px;
+          display: grid;
+          align-items: center;
+     }
+
+     .attribution a {
+          color: white;
      }
 
      /* .container__navMobile {
@@ -225,31 +350,54 @@ header {
           bottom: -830px;
           background-color: black;
           flex-direction: column;
-     }
+     } */
 
-     .logo-and-closeIcon {
+     /* .logo-and-closeIcon {
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 0 20px;
           padding-top: 40px;
+     } */
+
+     .container {
+          background-color: black;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: -900px;
+          display: none;
+          transition: 1s background-color ease;
+     }
+     .nav-mobile {
+          display: grid;
+          align-items: center;
+          padding: 80px 40px;
      }
 
-     .nav-mobile {
+     .logo-and-iconClose {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .logo-and-iconClose > .logo {
+          margin: 0;
      }
 
      .nav-mobile > ul {
+          color: white;
           list-style: none;
+          margin-top: 160px;
      }
 
      .nav-mobile > ul li {
-          color: white;
+          font-size: 50px;
+          font-family: "Josefin Sans", serif;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-top: 30px;
+          cursor: pointer;
      }
-
-     .hamburger-icon {
-          display: block;
-     }
-     .close-icon {
-          display: block;
-     } */
 }
