@@ -14,6 +14,8 @@ header {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     transition: background-color 1s ease;
+     z-index: 1;
 }
 
 .nav-desktop {
@@ -54,8 +56,8 @@ header {
 
 .hero-img > h3 {
      max-width: 530px;
-     font-size: clamp(30px, 5vw, 70px);
-     margin-left: 80px;
+     font-size: clamp(50px, 5vw, 70px);
+     margin-left: 160px;
      border: 1px solid white;
      padding: 30px 40px;
      color: white;
@@ -79,6 +81,7 @@ header {
      position: relative;
      top: 160px;
      right: 150px;
+     border: 1px solid;
 }
 
 .sec-1__text > h2 {
@@ -88,39 +91,129 @@ header {
      margin-bottom: 40px;
      font-size: clamp(30px, 5vw, 70px);
      max-width: 600px;
+     width: 100%;
 }
 
 .sec-1__text > p {
      color: hsl(0, 0%, 55%);
      line-height: 1.5;
+     font-weight: 400;
+     font-size: 20px;
 }
 
 .sec-2 {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+     display: grid;
+     align-items: center;
      width: 100%;
-     padding-top: 50px;
+     max-width: 1600px;
+     margin: 0 auto;
+     margin-top: 160px;
 }
 
 .creation-text {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     padding: 40px 0;
+}
+
+.creation-text > h2 {
+     font-size: clamp(20px, 5vw, 40px);
+     text-transform: uppercase;
+     font-family: "Josefin Sans", serif;
+     font-weight: 300;
+     margin-left: 40px;
+}
+
+.creation-text > button {
+     /* font-family: "Josefin Sans", serif; */
+     /* font-weight: 300; */
+     text-transform: uppercase;
+     padding: 5px 40px;
+     background-color: transparent;
+     border: 1px solid gray;
+     margin-right: 95px;
 }
 
 .cards {
-     display: grid;
-     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+     width: 100%;
+     max-width: 1600px;
+     margin: 0 auto;
+}
+
+.cards .card {
+     margin-right: 50px;
+     margin-bottom: 50px;
+     position: relative;
+}
+
+.card img {
+     width: 328px;
+     height: auto;
+}
+
+.card h3 {
+     position: absolute;
+     top: 480px;
+     color: white;
+     left: 40px;
+     font-weight: 300;
+     font-size: 30px;
+     text-transform: uppercase;
+     font-family: "Josefin Sans", serif;
 }
 
 @media (min-width: 320px) and (max-width: 1118px) {
      header {
-          padding: 40px 80px;
+          padding: 40px 0;
+     }
+
+     .logo {
+          margin-left: 80px;
      }
 
      .nav-desktop {
           display: none;
+     }
+
+     .hamburger-icon {
+          display: block;
+          margin-right: 80px;
+     }
+
+     .hero-img {
+          background-position: center;
+     }
+
+     .hero-img > h3 {
+          margin-left: 40px;
+     }
+
+     .sec-1 {
+          flex-direction: column;
+          padding: 40px 0;
+     }
+
+     .sec-1 > img {
+          max-width: 100%;
+     }
+
+     .sec-1__text {
+          background-color: white;
+          position: static;
+          border: none;
+          /* padding: 0; */
+     }
+
+     .sec-1__text > h2 {
+          text-align: center;
+     }
+     .sec-1__text > p {
+          margin: 0 auto;
      }
 
      /* .container__navMobile {
