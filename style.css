@@ -32,6 +32,9 @@ header {
      color: white;
      margin-right: 30px;
 }
+.container {
+     display: none;
+}
 
 .nav-mobile {
      display: none;
