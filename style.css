@@ -235,7 +235,7 @@ footer {
      }
 
      .logo {
-          margin-left: 80px;
+          margin-left: 40px;
      }
 
      .nav-desktop {
@@ -255,6 +255,7 @@ footer {
           font-size: clamp(15px, 5vw, 50px);
           max-width: 350px;
           margin: 0 auto;
+          padding: 30px 10px;
      }
 
      .sec-1 {
@@ -280,6 +281,7 @@ footer {
      }
      .sec-1__text > p {
           margin: 0 auto;
+          text-align: center;
      }
 
      footer {
