@@ -145,7 +145,6 @@ header {
      justify-content: center;
      width: 100%;
      max-width: 1600px;
-     margin: 0 auto;
 }
 
 .cards .card {
@@ -155,6 +154,13 @@ header {
      cursor: pointer;
      transition: 0.5s ease-in;
      border-radius: 10px;
+     display: grid;
+     align-items: center;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 500px;
+     width: 328px;
 }
 
 .cards .card:hover {
@@ -165,21 +171,20 @@ header {
      box-shadow: 1px 3px 10px 5px rgb(219, 219, 219);
 }
 
-.card img {
+/* .card img {
      width: 328px;
      height: auto;
      border-radius: 10px;
-}
+} */
 
 .card h3 {
-     position: absolute;
-     top: 480px;
      color: white;
-     left: 40px;
      font-weight: 300;
      font-size: 30px;
      text-transform: uppercase;
      font-family: "Josefin Sans", serif;
+     margin-left: 20px;
+     margin-top: 320px;
 }
 
 footer {
@@ -259,6 +264,47 @@ footer {
           margin-right: 80px;
      }
 
+     .container {
+          background-color: black;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: -900px;
+          display: none;
+          transition: 1s background-color ease;
+     }
+     .nav-mobile {
+          display: grid;
+          align-items: center;
+          padding: 80px 40px;
+     }
+
+     .logo-and-iconClose {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .logo-and-iconClose > .logo {
+          margin: 0;
+     }
+
+     .nav-mobile > ul {
+          color: white;
+          list-style: none;
+          margin-top: 160px;
+     }
+
+     .nav-mobile > ul li {
+          font-size: 50px;
+          font-family: "Josefin Sans", serif;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-top: 30px;
+          cursor: pointer;
+     }
+
      .hero-img {
           background-position: center;
      }
@@ -294,6 +340,10 @@ footer {
      .sec-1__text > p {
           margin: 0 auto;
           text-align: center;
+     }
+
+     .cards .card {
+          margin-right: clamp(0px, 5vw, 50px);
      }
 
      footer {
@@ -356,65 +406,5 @@ footer {
 
      .attribution a {
           color: white;
-     }
-
-     /* .container__navMobile {
-          display: flex;
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: -830px;
-          background-color: black;
-          flex-direction: column;
-     } */
-
-     /* .logo-and-closeIcon {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 20px;
-          padding-top: 40px;
-     } */
-
-     .container {
-          background-color: black;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: -900px;
-          display: none;
-          transition: 1s background-color ease;
-     }
-     .nav-mobile {
-          display: grid;
-          align-items: center;
-          padding: 80px 40px;
-     }
-
-     .logo-and-iconClose {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-     }
-
-     .logo-and-iconClose > .logo {
-          margin: 0;
-     }
-
-     .nav-mobile > ul {
-          color: white;
-          list-style: none;
-          margin-top: 160px;
-     }
-
-     .nav-mobile > ul li {
-          font-size: 50px;
-          font-family: "Josefin Sans", serif;
-          font-weight: 300;
-          text-transform: uppercase;
-          margin-top: 30px;
-          cursor: pointer;
      }
 }
