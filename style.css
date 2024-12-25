@@ -152,11 +152,23 @@ header {
      margin-right: 50px;
      margin-bottom: 50px;
      position: relative;
+     cursor: pointer;
+     transition: 0.5s ease-in;
+     border-radius: 10px;
+}
+
+.cards .card:hover {
+     margin-right: 50px;
+     margin-bottom: 50px;
+     position: relative;
+     scale: 1.05;
+     box-shadow: 1px 3px 10px 5px rgb(219, 219, 219);
 }
 
 .card img {
      width: 328px;
      height: auto;
+     border-radius: 10px;
 }
 
 .card h3 {
